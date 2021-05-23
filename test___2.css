@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'MICR Encoding';
+	src: url('http://www.fontsaddict.com/fontface/micr-encoding.ttf');
+  }
+
 .mediaViewInfo {
 	--web-view-name: test – 2;
 	--web-view-id: test__2;
