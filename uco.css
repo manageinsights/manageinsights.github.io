@@ -1,0 +1,132 @@
+.mediaViewInfo {
+	--web-view-name: test – 1;
+	--web-view-id: test__1;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: test__1;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#test__1 {
+	position: absolute;
+	width: 1920px;
+	height: 2595px;
+	background-color: rgba(255,255,255,0);
+	overflow: hidden;
+	--web-view-name: test – 1;
+	--web-view-id: test__1;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#Group_166 {
+	position: absolute;
+	width: 1767px;
+	height: 797px;
+	left: 91px;
+	top: 727px;
+	overflow: visible;
+}
+#Group_150 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 620px;
+    top: 927px;
+    overflow: visible;
+    z-index: 50000;
+}
+
+#ID6852265652254412 {
+	left: 441px;
+	top: 1160px;
+	position: absolute;
+	overflow: visible;
+	width: 314px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 34px;
+	color: rgba(0,0,0,1);
+}
+#Company_Name {
+    left: 171px;
+    top:1236px;
+    position: absolute;
+    overflow: visible;
+    width: 256px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    color: rgba(0,0,0,1);
+}
+#_143424 {
+	left: 527px;
+	top: 1410px;
+	position: absolute;
+	overflow: visible;
+	width: 208px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: MICR Encoding;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 59px;
+	color: rgba(0,0,0,1);
+}
+#ID635435229 {
+	position: absolute;
+	left: 784px;
+	top: 1410px;
+	overflow: visible;
+	width: 267px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: MICR Encoding;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 59px;
+	color: rgba(0,0,0,1);
+}
+#ID201031 {
+	left: 1127px;
+	top: 1410px;
+	position: absolute;
+	overflow: visible;
+	width: 178px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: MICR Encoding;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 59px;
+	color: rgba(0,0,0,1);
+}
+#ID31 {
+	left: 1355px;
+	top: 1410px;
+	position: absolute;
+	overflow: visible;
+	width: 178px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: MICR Encoding;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 59px;
+	color: rgba(0,0,0,1);
+}

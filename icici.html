@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>test – 1</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="test___1.css"/>
+<script id="applicationScript" type="text/javascript" src="test___1.js"></script>
+</head>
+<body>
+<div id="test__1">
+	<img id="Group_166" src="Group_166.png" srcset="Group_166.png 1x">
+	<img id="Group_150" src="cancelled/cl1.png">
+	<div id="ID6852265652254412">
+		<span>6852265652254412</span>
+	</div>
+	<div id="Company_Name">
+		<span>Company Name</span>
+	</div>
+	<div id="_143424">
+		<span> 143424</span>
+	</div>
+	<div id="ID635435229">
+		<span>635435229</span>
+	</div>
+	<div id="ID201031">
+		<span>201031</span>
+	</div>
+	<div id="ID31">
+		<span>31</span>
+	</div>
+</div>
+<script>
+	function myFunction() {
+		var txt;
+		var person = prompt("Please enter company name:", "Harry Potter");
+		if (person == null || person == "") {
+			txt = "User cancelled the prompt.";
+		} else {
+			txt = person;
+		}
+//			alert(txt)
+		document.getElementById("Company_Name").innerHTML = txt;
+	}
+
+	myFunction();
+
+	function randomaccount(min, max) {
+		var Accounnum = Math.floor(Math.random() * (max - min + 1) + min);
+//			alert(Accounnum);
+		document.getElementById("ID6852265652254412").innerHTML = Accounnum;
+		
+	}
+	randomaccount(1000000000,99999999999)
+	function randomchka(min, max) {
+		var Accounnum = Math.floor(Math.random() * (max - min + 1) + min);
+//			alert(Accounnum);
+		document.getElementById("_143424").innerHTML = Accounnum;
+		
+	}
+	randomchka(100000,999999)
+	function randomchkb(min, max) {
+		var Accounnum = Math.floor(Math.random() * (max - min + 1) + min);
+//			alert(Accounnum);
+		document.getElementById("ID635435229").innerHTML = Accounnum;
+		
+	}
+	randomchkb(100000000,999999999)
+	function randomchkc(min, max) {
+		var Accounnum = Math.floor(Math.random() * (max - min + 1) + min);
+//			alert(Accounnum);
+		document.getElementById("ID201031").innerHTML = Accounnum;
+		
+	}
+	randomchkc(100000,999999)
+	function randomchkd(min, max) {
+		var Accounnum = Math.floor(Math.random() * (max - min + 1) + min);
+//			alert(Accounnum);
+		document.getElementById("ID31").innerHTML = Accounnum;
+		
+	}
+	randomchkd(10,99)
+
+
+	var cnchk = [ "cancelled/cl1.png", "cancelled/cl2.png", "cancelled/cl3.png", "cancelled/cl4.png","cancelled/cl5.png","cancelled/cl6.png","cancelled/cl7.png","cancelled/cl8.png","cancelled/cl9.png","cancelled/cl10.png","cancelled/cl11.png"]
+	var bground = [ "background/bg1.jpg", "background/bg2.jpg", "background/bg3.jpg", "background/bg4.jpg", "background/bg5.jpg" , "background/bg6.jpg", ""]
+	const random = Math.floor(Math.random() * cnchk.length);
+	const randombody = Math.floor(Math.random() * bground.length);
+	console.log(random, cnchk[random]);
+	console.log(random, bground[randombody]);
+	document.getElementById("Group_150").src = cnchk[random];
+
+
+
+	document.body.style.backgroundImage = `url(`+bground[randombody]+`)`;
+	console.log(document.body.style.backgroundImage)
+</script>
+</body>
+</html>
