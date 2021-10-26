@@ -15,11 +15,35 @@
 
 <!--Header-part-->
 <div id="header">
-  <h1>
-    <img src="https://themewagon.com/wp-content/uploads/2021/03/Frame-172-1.png" alt="">
-  </h1>
-</div>
-<!--close-Header-part--> 
+  <form action="">
+    <label class="card profileimagechange" for="ssfilehere" onchange="previewFiles(this);" style="padding-top: 7px;padding-left: 7px;">
+      <img src="https://zonemedia.co/wp-content/uploads/2021/05/logo-1.png" class="" id="previewImg" style="width: 150px;;object-fit: cover;">
+      <input type="file" class="form-control d-none" id="ssfilehere" name="profileimage" accept="image/png, image/jpeg" > 
+    </label>
+  </form>
+    <!-- <img src="https://zonemedia.co/wp-content/uploads/2021/05/logo-1.png" alt="" width="150px" style="padding: 5px;"> -->
+  </div>
+  <!--close-Header-part--> 
+  
+  
+  <script>
+    function previewFiles(input){
+        var file = $("input[type=file]").get(0).files[0];
+  
+        if(file){
+            var readers = new FileReader();
+  
+            readers.onload = function(){
+                $("#previewImg").attr("src", readers.result);
+                $("#previewImg").removeClass('d-none');
+                // $("#uploadssbtn").removeClass('d-none');
+                $(".labletext").addClass('d-none');
+            }
+  
+            readers.readAsDataURL(file);
+        }
+    }
+  </script>
 
 <!--top-Header-messaages-->
 <div class="btn-group rightzero"> <a class="top_message tip-left" title="Manage Files"><i class="icon-file"></i></a> <a class="top_message tip-bottom" title="Manage Users"><i class="icon-user"></i></a> <a class="top_message tip-bottom" title="Manage Comments"><i class="icon-comment"></i><span class="label label-important">5</span></a> <a class="top_message tip-bottom" title="Manage Orders"><i class="icon-shopping-cart"></i></a> </div>
@@ -52,7 +76,7 @@
     <li> <a href="#"><i class="icon icon-signal"></i> <span>Campaign Stats</span></a> </li>
     <li> <a href="#"><i class="icon icon-inbox"></i> <span>Sites</span></a> </li>
     <li><a href="#"><i class="icon icon-th"></i> <span>Users</span></a></li>
-    <li><a href="#"><i class="icon icon-fullscreen"></i> <span>Conversions</span></a></li>
+    <li><a href="#" onclick="Addrows();"><i class="icon icon-fullscreen"></i> <span>Conversions</span></a></li>
     <li class="submenu "> <a href="#"><i class="icon icon-th-list"></i> <span>Reports</span> <span class="label label-important">3</span></a>
       <ul>
         <li><a href="#">Statistic</a></li>
@@ -86,14 +110,23 @@
         </ul>
    </div>
    <script>
-    <!--
+   
     var rws = '';
     var RemoveRow = function(obj){
       obj=document.getElementById(obj);
       rws=obj.getElementsByTagName('TR');
       obj.removeChild(rws[rws.length-1]);
     }
-    //-->
+    var newrow  = 1;
+    var Addrows = function(){
+      document.querySelector("#facebo > thead > tr").insertCell(-1).outerHTML = `<th contenteditable="true">New Row - `+newrow+`</th>` ;
+      var coutnt = document.querySelector("#facebo > thead > tr").childElementCount;
+      var newrows = function(){
+        document.querySelector("#facebo > tbody > tr").insertCell(-1).outerHTML = `<td contenteditable="true" class="center">2.5k</td>`;
+      }
+      newrows();
+      newrow++
+    }
     </script>
    <div class="container-fluid">
     <div class="row-fluid">
@@ -132,8 +165,9 @@
   
         <script type="text/javascript">
         
-          $('.addterms').click(function(){
-            $('#facebo > tbody').after('<tr><td contenteditable="true" class="center">12-12-2021</td><td contenteditable="true" class="center">2.5k</td><td contenteditable="true" class="center">2.5k</td><td contenteditable="true" class="center">2.5k</td><td contenteditable="true" class="center">2.5k</td></tr>');
+        $('.addterms').click(function(){
+            var mahatma = $("#facebo > tbody > tr").clone();
+            $('#facebo > tbody').after(mahatma);
           });
 
 

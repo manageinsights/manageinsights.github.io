@@ -1,10 +1,10 @@
 body {
-	background:#49CCED;
+	background:#0e0045;
 }
 
 #header {
 	background-color: #efefef;
-   margin-top:10px;
+   padding-top:10px;
 }
 
 #search input[type=text] {
@@ -23,11 +23,11 @@ body {
 .rightzero{ right:0px; display:none;}
 @media (max-width: 480px) {
 	#sidebar > a {
-		background:#49CCED;
+		background:#0e0045;
 		
 	}
 	#sidebar > ul {
-		background-color: #49CCED;
+		background-color: #0e0045;
 	}
 #user-nav{ margin:0px auto; top:-31px; border-top:none; width:250px; left:-3%; text-align:center; float:none;}
 #user-nav > ul > li:last-child{ border-right:1px solid #363E48}
